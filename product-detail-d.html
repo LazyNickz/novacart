@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bluetooth Earbuds | NovaCart</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f8f9fa;
+    }
+    .product-detail-section {
+      padding: 80px 0;
+    }
+    .product-detail img {
+      max-height: 400px;
+      object-fit: cover;
+    }
+    footer {
+      background: linear-gradient(to right, #ffffff, #f8f9fa);
+      padding: 30px 0;
+      text-align: center;
+    }
+    .back-btn {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      background-color: transparent;
+      border: none;
+      color: #333;
+      font-size: 28px;
+      padding: 10px;
+      cursor: pointer;
+      z-index: 10;
+      border-radius: 5px;
+      transition: color 0.3s ease, background-color 0.3s ease;
+    }
+    .back-btn:hover {
+      color: #ffffff;
+      background-color: #007bff;
+    }
+    .custom-divider {
+  width: 100%;
+  height: 1px;
+  background-color: #ddd;
+  margin: 30px 0;
+}
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+    <button class="back-btn" onclick="window.location.href='products.html'">
+      <i class="fas fa-arrow-left"></i>
+    </button>
+    <div class="container">
+      <a class="navbar-brand" href="index.html">NovaCart</a>
+      <a class="navbar-brand" href="#">
+        <img src="logo.png" alt="NovaCart Logo" style="height: 40px; margin-right: 10px;">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+         
+          
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Back Button -->
+  
+
+  <!-- Product Detail Section for Product E (Bluetooth Earbuds) -->
+  <section class="product-detail-section">
+    <div class="container">
+      <div class="row">
+        <!-- Product Image -->
+        <div class="col-md-6">
+          <img src="airpods.jpg" alt="Bluetooth Earbuds" class="img-fluid">
+        </div>
+        <!-- Product Details -->
+        <div class="col-md-6">
+          <h2 class="mb-3">Bluetooth Earbuds</h2>
+          <p><strong>Price:</strong> $99.99</p>
+          <p><strong>Description:</strong> Experience crisp, clear sound and deep bass with our sleek and wireless Bluetooth Earbuds. Perfect for everyday listening and sports activities.</p>
+          <p><strong>Color:</strong> Black</p>
+          <p><strong>Material:</strong> Plastic, Silicone</p>
+          
+          <h4 class="mt-4">Select Quantity:</h4>
+          <select class="form-select" id="quantity" aria-label="Select quantity">
+            <option selected>1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+          </select>
+
+          <button class="btn btn-dark mt-4" id="buy-now">Buy Now</button>
+          <div class="custom-divider"></div>
+          <div class="review">
+            <p><strong>John Williams</strong> - ★★★★★</p>
+            <p>"These earbuds sound amazing! The bass is deep, and they fit perfectly. Great for gym sessions."</p>
+          </div>
+          <div class="review">
+            <p><strong>Chloe Rodriguez</strong> - ★★★★☆</p>
+            <p>"Really comfortable and great sound quality. The connection is stable, but the battery life could be improved."</p>
+          </div>
+          <div class="review">
+            <p><strong>James Lee</strong> - ★★★☆☆</p>
+            <p>"The earbuds are good, but they don’t block out noise well. They’re fine for casual use but not great for traveling."</p>
+          </div>
+        
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 NovaCart. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.getElementById('buy-now').addEventListener('click', function() {
+      alert("Thank you for your purchase!");
+      // Redirect to checkout or cart page
+    });
+  </script>
+</body>
+</html>
+<script>
+  // Check for dark mode preference in localStorage and apply it
+  if (localStorage.getItem("darkMode") === "enabled") {
+    document.body.classList.add("dark-mode");
+  }
+</script>
